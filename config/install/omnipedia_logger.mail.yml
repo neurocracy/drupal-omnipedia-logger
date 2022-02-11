@@ -1,0 +1,12 @@
+langcode: en
+
+events_notification:
+  subject: 'New event(s) for [log-channel-name] at [site:name]'
+  body: |-
+    The following events for [log-channel-name] have been logged:
+
+    [log-channel-records]
+
+    More events may have been logged since. [log-channel-link]
+
+    --  [site:name] team
