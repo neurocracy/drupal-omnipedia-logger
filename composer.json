@@ -11,6 +11,7 @@
     }
   ],
   "require": {
+    "php": "^8",
     "drupal/monolog": "^2.0"
   },
   "require-dev": {
