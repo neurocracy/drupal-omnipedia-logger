@@ -1,0 +1,7 @@
+omnipedia_logger.mail:
+  type: config_object
+  label: 'Email settings'
+  mapping:
+    events_notification:
+      type: mail
+      label: 'Log event(s) notification'
