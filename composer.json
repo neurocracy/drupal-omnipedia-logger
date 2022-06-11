@@ -13,5 +13,12 @@
   "require": {
     "php": "^8",
     "drupal/monolog": "^2.0"
+  },
+  "extra": {
+    "patches": {
+      "drupal/monolog": {
+        "Argument add to addRecord upstream: https://www.drupal.org/project/monolog/issues/3284825": "drupal/modules/custom/omnipedia_logger/patches/drupal/monolog/3284825-fix-addRecord-method-compatibility-4.patch"
+      }
+    }
   }
 }
