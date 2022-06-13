@@ -48,3 +48,15 @@ Then, in your root ```composer.json```, add the following to the
 Then, in your project's root, run ```composer require
 "drupal/omnipedia_logger:3.x-dev@dev"``` to have Composer install the module
 and its required dependencies for you.
+
+----
+
+# Description
+
+This module is fairly bare-bones at the moment. It exists primarily to provide
+the requirement for [`drupal/monolog`](https://www.drupal.org/project/monolog)
+and a custom Monolog mail handler
+([`Logger\Handler\DrupalMailHandler`](src/Logger/Handler/DrupalMailHandler.php))
+to send emails using Drupal core's mail manager while implementing true
+[dependency
+injection](https://www.drupal.org/docs/drupal-apis/services-and-dependency-injection/services-and-dependency-injection-in-drupal-8).
