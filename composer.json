@@ -12,6 +12,7 @@
   ],
   "require": {
     "php": "^8",
+    "cweagans/composer-patches": "^1.7",
     "drupal/monolog": "^2.0"
   },
   "extra": {
