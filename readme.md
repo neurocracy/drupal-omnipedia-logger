@@ -22,3 +22,29 @@ part of this codebase is useful or will inspire someone out there.
 * PHP 8
 
 * [Composer](https://getcomposer.org/)
+
+----
+
+# Installation
+
+Ensure that you have your Drupal installation set up with the correct Composer
+installer types such as those provided by [the ```drupal\recommended-project```
+template](https://www.drupal.org/docs/develop/using-composer/starting-a-site-using-drupal-composer-project-templates#s-drupalrecommended-project).
+If you're starting from scratch, simply requiring that template and following
+[the Drupal.org Composer
+documentation](https://www.drupal.org/docs/develop/using-composer/starting-a-site-using-drupal-composer-project-templates)
+should get you up and running.
+
+Then, in your root ```composer.json```, add the following to the
+```"repositories"``` section:
+
+```
+{
+  "type": "vcs",
+  "url": "https://github.com/neurocracy/drupal-omnipedia-logger.git"
+}
+```
+
+Then, in your project's root, run ```composer require
+"drupal/omnipedia_logger:3.x-dev@dev"``` to have Composer install the module
+and its required dependencies for you.
