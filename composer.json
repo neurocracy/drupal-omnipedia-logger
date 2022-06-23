@@ -12,14 +12,6 @@
   ],
   "require": {
     "php": "^8",
-    "cweagans/composer-patches": "^1.7",
-    "drupal/monolog": "^2.0"
-  },
-  "extra": {
-    "patches": {
-      "drupal/monolog": {
-        "Argument add to addRecord upstream: https://www.drupal.org/project/monolog/issues/3284825": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-logger/3.x/patches/drupal/monolog/3284825-fix-addRecord-method-compatibility-4.patch"
-      }
-    }
+    "drupal/monolog": "^2.0.2"
   }
 }

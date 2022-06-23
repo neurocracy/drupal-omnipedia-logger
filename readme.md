@@ -49,15 +49,6 @@ Then, in your project's root, run ```composer require
 "drupal/omnipedia_logger:3.x-dev@dev"``` to have Composer install the module
 and its required dependencies for you.
 
-## Patches
-
-This currently provides a patch for [a `drupal/monolog`
-issue](https://www.drupal.org/project/monolog/issues/3284825) that fixes a fatal
-error due to a `monolog/monolog` upstream change which will be removed once that
-makes it into a stable release.
-[cweagans/composer-patches](https://github.com/cweagans/composer-patches) is
-installed as a required dependency by Composer to automate this.
-
 ----
 
 # Description
