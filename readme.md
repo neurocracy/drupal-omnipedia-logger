@@ -50,8 +50,8 @@ should get you up and running.
 Then, in your root ```composer.json```, add the following to the
 ```"repositories"``` section:
 
-```
-{
+```json
+"drupal/omnipedia_logger": {
   "type": "vcs",
   "url": "https://github.com/neurocracy/drupal-omnipedia-logger.git"
 }
