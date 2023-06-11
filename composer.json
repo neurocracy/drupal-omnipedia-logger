@@ -12,6 +12,7 @@
   ],
   "require": {
     "php": "^8",
+    "drupal/core": "^9.5 || ^10.0",
     "drupal/monolog": "^2.0.2"
   }
 }

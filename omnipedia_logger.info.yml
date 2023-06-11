@@ -2,7 +2,7 @@ name: Omnipedia - Logger
 type: module
 description: Provides logging enhancements for Omnipedia.
 package: Omnipedia
-core_version_requirement: ^9
+core_version_requirement: ^9.5 || ^10.0
 
 dependencies:
   - monolog:monolog
