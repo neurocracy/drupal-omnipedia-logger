@@ -63,14 +63,14 @@ class DrupalMailHandler extends MailHandler {
    *
    * @var \Drupal\Core\Language\LanguageManagerInterface
    */
-  protected LanguageManagerInterface $languageManager;
+  protected readonly LanguageManagerInterface $languageManager;
 
   /**
    * The Drupal mail plug-in manager service.
    *
    * @var \Drupal\Core\Mail\MailManagerInterface
    */
-  protected MailManagerInterface $mailManager;
+  protected readonly MailManagerInterface $mailManager;
 
   /**
    * The email address to send log emails to.
@@ -122,7 +122,7 @@ class DrupalMailHandler extends MailHandler {
   public function setDependencies(
     LanguageManagerInterface  $languageManager,
     MailManagerInterface      $mailManager,
-    TranslationInterface      $stringTranslation
+    TranslationInterface      $stringTranslation,
   ): void {
     $this->languageManager    = $languageManager;
     $this->mailManager        = $mailManager;
@@ -144,14 +144,14 @@ class DrupalMailHandler extends MailHandler {
         [
           '@level'    => $records[0]['level_name'],
           '@channel'  => $records[0]['channel'],
-        ]
+        ],
       ),
       'body' => $content,
     ];
 
     $this->mailManager->mail(
       'omnipedia_logger', 'default', $this->to, $defaultLanguage->getName(),
-      $params
+      $params,
     );
 
   }
