@@ -74,13 +74,6 @@ class DrupalMailHandler extends MailHandler {
   protected readonly MailManagerInterface $mailManager;
 
   /**
-   * The email address to send log emails to.
-   *
-   * @var string
-   */
-  private string $to;
-
-  /**
    * Constructor.
    *
    * @param string $to
@@ -93,14 +86,12 @@ class DrupalMailHandler extends MailHandler {
    *   The bubbling behavior.
    */
   public function __construct(
-    string      $to,
+    private readonly string $to,
     int|string  $level = Logger::ERROR,
     bool        $bubble = true,
   ) {
 
     parent::__construct($level, $bubble);
-
-    $this->to = $to;
 
   }
 
