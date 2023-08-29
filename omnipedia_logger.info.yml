@@ -6,4 +6,5 @@ core_version_requirement: ^9.5 || ^10.0
 php: 8.1
 
 dependencies:
+  - hux:hux
   - monolog:monolog

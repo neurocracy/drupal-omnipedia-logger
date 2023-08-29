@@ -47,12 +47,13 @@ use Monolog\Logger;
  * @see https://symfony.com/doc/4.4/service_container/parent_services.html
  *   Symfony parent service documentation.
  *
- * @see \omnipedia_logger_mail()
+ * @see \Drupal\omnipedia_logger\Hooks\Mail::mail()
  *   Minimal \hook_mail() implementation to pass $param values to $message.
  *
  * @see \Drupal\monolog\Logger\Handler\DrupalMailHandler
  *   Copied from this, altered to use dependency injection, and customized the
- *   $params array structure sent to \omnipedia_logger_mail().
+ *   $params array structure sent to
+ *   \Drupal\omnipedia_logger\Hooks\Mail::mail().
  */
 class DrupalMailHandler extends MailHandler {
 
