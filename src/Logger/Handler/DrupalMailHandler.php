@@ -44,7 +44,7 @@ use Monolog\Logger;
  * pass the required services which makes configuring multiple uses of this much
  * simpler.
  *
- * @see https://symfony.com/doc/4.4/service_container/parent_services.html
+ * @see https://symfony.com/doc/current/service_container/parent_services.html
  *   Symfony parent service documentation.
  *
  * @see \Drupal\omnipedia_logger\Hooks\Mail::mail()
