@@ -9,7 +9,7 @@ use Drupal\Core\Mail\MailManagerInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\Core\StringTranslation\TranslationInterface;
 use Monolog\Handler\MailHandler;
-use Monolog\Logger;
+use Monolog\Level;
 
 /**
  * Monolog handler to send email using Drupal core mail manager.
@@ -87,7 +87,7 @@ class DrupalMailHandler extends MailHandler {
    */
   public function __construct(
     private readonly string $to,
-    int|string  $level = Logger::ERROR,
+    int|string  $level = Level::Error,
     bool        $bubble = true,
   ) {
 
