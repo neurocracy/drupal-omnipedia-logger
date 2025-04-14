@@ -2,7 +2,7 @@
   "name": "drupal/omnipedia_logger",
   "description": "Omnipedia - Logger",
   "type": "drupal-custom-module",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-3.0-or-later",
   "support": {
     "docs": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-logger",
     "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-logger"
